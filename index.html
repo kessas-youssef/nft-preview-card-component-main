@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+
+      position: absolute ;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .attribution a {
+      color:  hsl(178, 100%, 50%);
+      text-decoration: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      width: 20rem;
+      border-radius: 15px;
+      padding: 1.5rem;
+      font-family: 'Outfit', sans-serif;
+      box-shadow: 0px 2rem 2rem 20px hsl(215, 64%, 9%);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      position: absolute ;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .card>* {
+      margin: 1rem 0;
+    }
+
+
+    .card__img {
+      border-radius: 10px;
+      margin-top: 0;
+    }
+
+    .card__name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .card__desc {
+      color: hsl(215, 51%, 70%);
+    }
+
+    .card__numeric-infos {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    svg,
+    .card__avatar {
+      margin: 0 10px;
+      transform: translateY(25%);
+    }
+
+    .card__worth {
+      font-weight: 600;
+      color: hsl(178, 100%, 50%);
+    }
+
+    .card__expiry,
+    .card__ownership {
+      color: hsl(215, 51%, 70%);
+    }
+
+    .card__hr {
+      border: 0.5px solid hsl(215, 32%, 27%);
+      margin-bottom: 0;
+    }
+
+    .card__avatar {
+      width: 2.3rem;
+      border: 1px solid #ffff;
+      border-radius: 100%;
+    }
+
+    .card__creator {
+      color: #ffff;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img class="card__img" src="images/image-equilibrium.jpg" alt="img_equilibrium">
+    <p class="card__name">Equilibrium #3429</p>
+
+    <p class="card__desc">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="card__numeric-infos">
+      <span class="card__worth"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+            fill="#00FFF8" />
+        </svg>0.041 ETH</span>
+      <span class="card__expiry"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+            fill="#8BACD9" />
+        </svg>3 days left</span>
+    </div>
+
+    <hr class="card__hr">
+
+    <div class="card__footer">
+      <img class="card__avatar" src="images/image-avatar.png" alt="avatar">
+      <span class="card__ownership">Creation of <span class="card__creator">Jules Wyvern</span></span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.instagram.com/youssef_kessas/">KESSAS Youssef</a>.
+  </div>
+</body>
+
+</html>
